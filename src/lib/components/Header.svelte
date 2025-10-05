@@ -71,7 +71,7 @@
 	<nav
 		in:fly={{ y: '-100svh', duration: 400, opacity: 1 }}
 		out:fly={{ y: '-100svh', duration: 400, opacity: 1, delay: 300 }}
-		class="fixed top-0 right-0 left-0 z-15 flex min-h-[100svh] flex-col justify-end gap-6 bg-black/75 p-5.5 font-serif font-bold text-cream backdrop-blur-[8px] hd:hidden"
+		class="fixed inset-0 z-15 flex min-h-[100dvh] flex-col justify-end gap-6 bg-black/75 p-5.5 font-serif font-bold text-cream backdrop-blur-[8px] hd:hidden"
 	>
 		{#each links as link, index}
 			<a

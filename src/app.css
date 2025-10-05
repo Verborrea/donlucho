@@ -6,6 +6,7 @@
 	--color-orange: #ff743f;
 	--color-sky: #7fb9ff;
 	--color-black: #181717;
+	--color-dark-gray: #333231;
 	--font-serif: 'Playfair Display', serif;
 	--breakpoint-hd: 52rem;
 }
@@ -26,11 +27,22 @@
 	img {
 		object-fit: cover;
 	}
+	label {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	input {
+		@apply h-12 rounded-lg bg-[#444444] px-4 text-cream outline-blue-400 transition-all focus:outline-3;
+	}
+	button {
+		@apply cursor-pointer transition-all active:scale-95;
+	}
 }
 
 @layer components {
 	.btn {
-		@apply cursor-pointer rounded-3xl bg-blue px-5 pt-2 pb-2.5 text-lg font-bold text-white transition-all hover:rounded-lg hover:bg-orange active:scale-95;
+		@apply rounded-3xl bg-blue px-5 pt-2 pb-2.5 text-lg font-bold text-white hover:rounded-lg hover:bg-orange disabled:cursor-not-allowed disabled:bg-blue/50;
 		font-family: 'Playfair Display', serif;
 	}
 }
