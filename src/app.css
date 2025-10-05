@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-cream: #fff6e5;
+	--color-blue: #0054ea;
+	--color-orange: #ff743f;
+	--color-sky: #7fb9ff;
+	--color-black: #181717;
+	--font-serif: 'Playfair Display', serif;
+	--breakpoint-hd: 52rem;
+}
+
+@layer base {
+	:root {
+		font-family: 'Oxygen', sans-serif;
+		color: var(--color-black);
+		scroll-behavior: smooth;
+	}
+	h1,
+	h2 {
+		font-family: 'Playfair Display', serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: bold;
+	}
+	img {
+		object-fit: cover;
+	}
+}
+
+@layer components {
+	.btn {
+		@apply cursor-pointer rounded-3xl bg-blue px-5 pt-2 pb-2.5 text-lg font-bold text-white transition-all hover:rounded-lg hover:bg-orange active:scale-95;
+		font-family: 'Playfair Display', serif;
+	}
+}
