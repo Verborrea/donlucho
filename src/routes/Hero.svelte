@@ -18,10 +18,10 @@
 				>vendedores motorizados</mark
 			>
 			para unirte a nuestro equipo comercial. Es un trabajo de
-			<mark class="pr-1 font-bold text-black italic">medio tiempo con horario flexible</mark>, ideal
-			para quienes buscan generar ingresos extra o estabilidad
-			<mark class="pr-1 font-bold text-black italic">sin necesidad de experiencia</mark> previa.Nosotros
-			te capacitamos y te damos una cartera de clientes lista para empezar.
+			<strong>medio tiempo con horario flexible</strong>, ideal para quienes buscan generar ingresos
+			extra o estabilidad
+			<strong>sin necesidad de experiencia</strong> previa.Nosotros te capacitamos y te damos una cartera
+			de clientes lista para empezar.
 		</p>
 	</div>
 	<section

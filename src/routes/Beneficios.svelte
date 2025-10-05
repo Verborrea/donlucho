@@ -1,7 +1,7 @@
 <script>
-	import b1 from '$lib/assets/b1.avif';
-	import b2 from '$lib/assets/b2.avif';
-	import b3 from '$lib/assets/b3.avif';
+	import b3 from '$lib/assets/b1.avif';
+	import b1 from '$lib/assets/b2.avif';
+	import b2 from '$lib/assets/b3.avif';
 	import b4 from '$lib/assets/b4.avif';
 </script>
 
