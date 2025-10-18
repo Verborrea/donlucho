@@ -8,9 +8,9 @@
 	const openDialog = getContext('openDialog');
 </script>
 
-<section class="min-h-screen content-end bg-blue py-8 text-cream md:py-16">
-	<div class="mx-auto flex max-w-7xl flex-col gap-6 px-6 md:items-start">
-		<p class="text-xl font-bold md:text-2xl">BIENVENIDO A RINDE+</p>
+<section class="min-h-[100dvh] content-end bg-blue py-8 text-cream md:py-16">
+	<div class="mx-auto flex max-w-7xl flex-col gap-5 px-6 md:items-start md:gap-6">
+		<p class="text-xl font-bold md:text-2xl">Bienvenido a RINDE+</p>
 		<h1
 			class="max-w-2xl text-5xl leading-[0.9] tracking-tight text-pretty sm:text-6xl md:text-7xl lg:text-8xl"
 		>
@@ -22,6 +22,9 @@
 		<button type="button" onclick={openDialog} class="btn">Postula aquí</button>
 	</div>
 </section>
+<div class=" bg-blue py-8">
+	<div class="barra h-24"></div>
+</div>
 <Hero />
 <Beneficios />
 <Canal />
@@ -33,5 +36,10 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+	.barra {
+		background-image: url('/r.avif');
+		background-size: contain;
+		background-position: center;
 	}
 </style>
