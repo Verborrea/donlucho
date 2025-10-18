@@ -12,16 +12,16 @@
 		</h1>
 		<div class="grid gap-4 text-center md:grid-cols-2 lg:grid-cols-4">
 			<section class="bg-cream p-4.5 shadow-lg transition hover:rotate-5">
+				<img src={b3} alt="Chico levantando una billetera" class="aspect-square" />
+				<p class="grow">Sueldo fijo + comisiones</p>
+			</section>
+			<section class="bg-cream p-4.5 shadow-lg transition hover:rotate-5">
 				<img src={b1} alt="Chico levantando una billetera" class="aspect-square" />
 				<p class="grow">Horario flexible</p>
 			</section>
 			<section class="bg-cream p-4.5 shadow-lg transition hover:rotate-5">
 				<img src={b2} alt="Chico levantando una billetera" class="aspect-square" />
 				<p class="grow">Capacitación y cartera de clientes</p>
-			</section>
-			<section class="bg-cream p-4.5 shadow-lg transition hover:rotate-5">
-				<img src={b3} alt="Chico levantando una billetera" class="aspect-square" />
-				<p class="grow">Sueldo fijo + <mark>comisiones</mark></p>
 			</section>
 			<section class="bg-cream p-4.5 shadow-lg transition hover:rotate-5">
 				<img src={b4} alt="Chico levantando una billetera" class="aspect-square" />
@@ -41,7 +41,6 @@
 	p {
 		align-content: center;
 		font-style: italic;
-		font-family: 'Playfair Display', serif;
 		line-height: 1.2;
 		text-wrap: balance;
 		font-size: 20px;

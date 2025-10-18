@@ -3,7 +3,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import { Toaster, toast } from 'svelte-sonner';
-	import { onMount } from 'svelte';
+	import { onMount, setContext } from 'svelte';
 	import { Loader, X } from 'lucide-svelte';
 
 	let { children } = $props();
@@ -24,6 +24,8 @@
 			dialog.showModal();
 		}
 	}
+
+	setContext('openDialog', openDialog);
 
 	function closeDialog() {
 		if (dialog) {
@@ -97,18 +99,9 @@
 		}
 	}}
 >
-	<button
-		class="absolute top-4 right-4 cursor-pointer focus:outline-0"
-		type="button"
-		aria-label="Cerrar"
-		title="Cerrar"
-		onclick={closeDialog}
-	>
-		<X />
-	</button>
 	<form class="flex flex-col gap-5 px-6 py-8" {onsubmit}>
 		<h1 class="text-center text-4xl leading-none">¡Únete ahora!</h1>
-		<p class="text-center sm:text-lg lg:text-xl">
+		<p class="text-center sm:text-lg">
 			Déjanos tus datos y nos pondremos en contacto contigo para la entrevista.
 		</p>
 		<label for="name">
@@ -148,7 +141,7 @@
 			/>
 		</label>
 		<label for="licencia">
-			<span class="font-bold">¿Tienes Licencia Vigente?</span>
+			<span class="font-bold">¿Tienes Moto?</span>
 			<div class="grid grid-cols-2 gap-2 text-center font-bold">
 				<button
 					type="button"
@@ -186,6 +179,15 @@
 				<Loader class="size-4 animate-spin" />
 			{/if}
 			{loading ? 'Enviando' : 'Enviar'}
+		</button>
+		<button
+			type="button"
+			class="hover:underline"
+			aria-label="Cerrar"
+			title="Cerrar"
+			onclick={closeDialog}
+		>
+			Más información
 		</button>
 	</form>
 </dialog>

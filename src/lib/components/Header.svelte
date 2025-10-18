@@ -39,11 +39,13 @@
 </script>
 
 <header class="fixed top-0 right-0 left-0 z-20 bg-black/75 text-white backdrop-blur-[8px]">
-	<div class="mx-auto flex max-w-7xl items-center justify-between gap-4 p-6 font-serif">
-		<img src={logo} alt="Logo de Don Luciano" class="w-28 hd:w-40" />
+	<div class="mx-auto flex max-w-7xl items-center justify-between gap-4 p-6">
+		<a href="/" aria-label="Inicio">
+			<img src={logo} alt="Logo de Don Luciano" class="w-28 hd:w-40" /></a
+		>
 		<nav class="hidden items-center gap-8 hd:flex">
 			{#each links as link}
-				<a href={link.href} class="text-xl font-bold hover:text-yellow-300">{link.name}</a>
+				<a href={link.href} class="text-lg font-bold hover:text-orange">{link.name}</a>
 			{/each}
 			<button
 				type="button"
@@ -71,7 +73,7 @@
 	<nav
 		in:fly={{ y: '-100svh', duration: 400, opacity: 1 }}
 		out:fly={{ y: '-100svh', duration: 400, opacity: 1, delay: 300 }}
-		class="fixed inset-0 z-15 flex min-h-[100dvh] flex-col justify-end gap-6 bg-black/75 p-5.5 font-serif font-bold text-cream backdrop-blur-[8px] hd:hidden"
+		class="fixed inset-0 z-15 flex min-h-[100dvh] flex-col justify-end gap-6 bg-black/75 p-5.5 font-bold text-cream backdrop-blur-[8px] hd:hidden"
 	>
 		{#each links as link, index}
 			<a
