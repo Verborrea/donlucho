@@ -1,6 +1,6 @@
 {
-  "name": "Don Luciano",
-  "short_name": "Don Luciano",
+  "name": "Rinde+",
+  "short_name": "Rinde+",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#0054ea",
-  "background_color": "#0054ea",
+  "theme_color": "#361975",
+  "background_color": "#361975",
   "display": "standalone"
 }
