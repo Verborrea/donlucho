@@ -3,7 +3,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import { Toaster, toast } from 'svelte-sonner';
-	import { setContext } from 'svelte';
+	import { onMount, setContext } from 'svelte';
 	import { Loader, X } from 'lucide-svelte';
 
 	let { children } = $props();
@@ -80,6 +80,10 @@
 			loading = false;
 		}
 	}
+
+	onMount(() => {
+		openDialog();
+	});
 </script>
 
 <Toaster richColors />
